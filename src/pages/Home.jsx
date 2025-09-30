@@ -4,7 +4,6 @@ import HomeHeroText from '../components/home/HomeHeroText'
 import HomeBottomText from '../components/home/HomeBottomText'
 import Header from '../components/common/Header'
 import WhyUsSection from '../components/home/WhyUsSection'
-import FloatingTransition from '../components/home/FloatingTransition'
 import PortfolioSection from '../components/home/PortfolioSection'
 import StatsSection from '../components/home/StatsSection'
 import PricingSection from '../components/home/PricingSection'
@@ -99,16 +98,13 @@ const Home = () => {
         <div ref={heroSectionRef} className='h-screen h-[100dvh] w-screen relative flex flex-col hero-content'>
           <HomeHeroText />
         </div>
-
-        {/* Why Us Section - Get a Quote */}
-        <WhyUsSection />
-
-        {/* Floating Transition Animation */}
-        <FloatingTransition />
-
+        
         {/* Portfolio Section */}
         <PortfolioSection />
-
+        
+        {/* Why Us Section */}
+        <WhyUsSection />
+        
         {/* Stats Section */}
         <StatsSection />
         
